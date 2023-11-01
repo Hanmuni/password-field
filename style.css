@@ -1,0 +1,16 @@
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.margin-bottom {
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 20vw;
+}
+
+input[type="checkbox"] {
+  width: inherit;
+}
