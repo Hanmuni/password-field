@@ -1,10 +1,12 @@
-let checkbox = document.querySelector("#checkbox");
-let password = document.querySelector("#password");
+const checkbox = document.querySelector("#checkbox");
+let passwords = document.querySelectorAll("input[type='password']");
 
-checkbox.addEventListener("click", function () {
-  if (checkbox.checked) {
-    password.type = "text";
-  } else {
-    password.type = "password";
+checkbox.addEventListener("click", () => {
+  for (let password of passwords) {
+    if (checkbox.checked) {
+      password.type = "text";
+    } else {
+      password.type = "password";
+    }
   }
 });
