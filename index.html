@@ -9,9 +9,8 @@
     <title>Password Field</title>
   </head>
   <body>
-    <h1>Password visibility</h1>
-
-    <h3>Enter your username and password to login</h3>
+    <h1>Change Username</h1>
+    <h3>Enter your username and password to change your username</h3>
 
     <form>
       <div class="column margin-bottom">
@@ -29,7 +28,29 @@
         <label for="checkbox"> Show password! </label>
       </div>
 
-      <button type="submit">Login</button>
+      <button type="submit">Change Username</button>
+    </form>
+
+    <h1>Change Password</h1>
+    <h3>Enter your current password and new password below.</h3>
+
+    <form>
+      <div class="column margin-bottom">
+        <label for="current-password"> Current Password </label>
+        <input placeholder="Current passoword" type="password" id="current-password" />
+      </div>
+
+      <div class="column margin-bottom">
+        <label for="new-password"> New Password </label>
+        <input placeholder="password" type="password" id="new-password"/>
+      </div>
+
+      <div class="margin-bottom">
+        <input type="checkbox" id="checkbox2" />
+        <label for="checkbox"> Show password! </label>
+      </div>
+
+      <button type="submit">Change Password</button>
     </form>
   </body>
 </html>
