@@ -24,7 +24,7 @@
       </div>
 
       <div class="margin-bottom">
-        <input type="checkbox" id="checkbox" />
+        <input type="checkbox" id="checkbox" data-password-id="#password" />
         <label for="checkbox"> Show password! </label>
       </div>
 
@@ -37,16 +37,24 @@
     <form>
       <div class="column margin-bottom">
         <label for="current-password"> Current Password </label>
-        <input placeholder="Current passoword" type="password" id="current-password" />
+        <input
+          placeholder="Current passoword"
+          type="password"
+          id="current-password"
+        />
       </div>
 
       <div class="column margin-bottom">
         <label for="new-password"> New Password </label>
-        <input placeholder="password" type="password" id="new-password"/>
+        <input placeholder="password" type="password" id="new-password" />
       </div>
 
       <div class="margin-bottom">
-        <input type="checkbox" id="checkbox2" />
+        <input
+          type="checkbox"
+          id="checkbox2"
+          data-password-id="#current-password, #new-password"
+        />
         <label for="checkbox"> Show password! </label>
       </div>
 

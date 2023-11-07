@@ -1,20 +1,11 @@
-const checkbox = document.querySelector("#checkbox");
-let password = document.querySelector("#password");
+document.addEventListener("click", (event) => {
+  if (!event.target.matches("[data-password-id]")) return;
 
-checkbox.addEventListener("click", () => {
-  if (checkbox.checked) {
-    password.type = "text";
-  } else {
-    password.type = "password";
-  }
-});
+  let passwordIds = event.target.getAttribute("data-password-id");
+  let passwords = document.querySelectorAll(passwordIds);
 
-const checkbox2 = document.querySelector("#checkbox2");
-let passwords = document.querySelectorAll("#new-password, #current-password");
-
-checkbox2.addEventListener("click", () => {
   for (let password of passwords) {
-    if (checkbox2.checked) {
+    if (event.target.checked) {
       password.type = "text";
     } else {
       password.type = "password";
